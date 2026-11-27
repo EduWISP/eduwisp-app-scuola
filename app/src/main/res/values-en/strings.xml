@@ -44,7 +44,6 @@
     <string name="in_attesa">pending</string>
     <string name="approvata">approved</string>
     <string name="respinta">rejected</string>
-    <string name="pareri_n">%1$d family opinions</string>
     <string name="motivazione_studente">Student\'s reason: %1$s</string>
     <string name="pareri_famiglia">Family opinions</string>
     <string name="nessun_parere">No opinions.</string>
@@ -62,5 +61,14 @@
     <plurals name="notifica_testo">
         <item quantity="one">%d pending request</item>
         <item quantity="other">%d pending requests</item>
+    </plurals>
+    <string name="menu_istituto">School</string>
+    <string name="menu_classi">My classes</string>
+    <string name="menu_coordinamento">Coordination</string>
+    <string name="menu_richieste">App requests</string>
+    <string name="menu_figli">My children</string>
+    <plurals name="pareri_n">
+        <item quantity="one">%d family opinion</item>
+        <item quantity="other">%d family opinions</item>
     </plurals>
 </resources>
