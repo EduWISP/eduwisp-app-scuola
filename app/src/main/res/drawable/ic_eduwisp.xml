@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+<!-- Marchio EduWISP, convertito da EduWISP/.github/branding/eduwisp-mark.svg. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="256"
+    android:viewportHeight="256">
+    <path
+        android:fillColor="#163E73"
+        android:pathData="M56,0h144a56,56 0,0 1,56 56v144a56,56 0,0 1,-56 56h-144a56,56 0,0 1,-56 -56v-144a56,56 0,0 1,56 -56z" />
+    <path
+        android:strokeColor="#2EC4A0"
+        android:strokeWidth="14"
+        android:strokeLineCap="round"
+        android:pathData="M106.79,104.79A30,30 0,0 1,149.21 104.79M91.23,89.23A52,52 0,0 1,164.77 89.23M75.67,73.67A74,74 0,0 1,180.33 73.67" />
+    <path
+        android:fillColor="#2EC4A0"
+        android:pathData="M118,126a10,10 0,1 0,20 0a10,10 0,1 0,-20 0z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M121,204C102,191 78,186 52,189V141C78,137 102,142 121,154ZM135,204C154,191 178,186 204,189V141C178,137 154,142 135,154Z" />
+</vector>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SPDX-License-Identifier: AGPL-3.0-or-later -->
+<resources>
+    <string name="app_name">EduWISP Scuola</string>
+    <string name="accesso_spiegazione">Accedi con l\'utente e la password del tuo istituto.</string>
+    <string name="server">Server dell\'istituto</string>
+    <string name="utente">Utente</string>
+    <string name="password">Password</string>
+    <string name="accesso_demo">Demo con soli dati fittizi: utente demo, password demo (sola lettura).</string>
+    <string name="accedi">Accedi</string>
+    <string name="ruolo">Ruolo</string>
+    <string name="vedi_come">Vedi come</string>
+    <string name="esci">Esci</string>
+    <string name="banner_vedi_come">Stai vedendo come %1$s. Sola lettura, accesso registrato.</string>
+    <string name="banner_sola_lettura">Account in sola lettura: puoi guardare tutto ma non modificare nulla.</string>
+    <string name="esci_dalla_vista">Esci dalla vista</string>
+    <string name="nessun_ruolo">Il tuo account non ha un ruolo in un istituto attivo.</string>
+    <string name="classi">Classi</string>
+    <string name="studenti">Studenti</string>
+    <string name="tablet">Tablet</string>
+    <string name="non_conformi">Non conformi</string>
+    <string name="nessuna_classe">Nessuna classe.</string>
+    <string name="coordinata">coordinatore</string>
+    <string name="riga_classe">%1$d studenti · %2$d tablet · %3$d non conformi · %4$d senza contatto</string>
+    <string name="indietro">← Indietro</string>
+    <string name="anno">Anno scolastico %1$s</string>
+    <string name="app">App consentite</string>
+    <string name="nessuna">nessuna</string>
+    <string name="sbloccata_fino">%1$s sbloccata fino alle %2$s</string>
+    <string name="blocca_ora">Blocca ora</string>
+    <string name="sblocca_per_lezione">Sblocca un\'app per la lezione</string>
+    <string name="studenti_n">Studenti (%1$d)</string>
+    <string name="tablet_condivisi">Tablet condivisi (%1$d)</string>
+    <string name="nessun_tablet">nessun tablet personale</string>
+    <string name="tablet_non_conforme">%1$s · non conforme</string>
+    <string name="tablet_senza_contatto">%1$s · senza contatto da 24 ore</string>
+    <string name="tablet_ok">%1$s · conforme</string>
+    <string name="sblocco_spiegazione">Vale solo per i tablet di questa classe e si chiude da solo alla scadenza, anche senza rete. Lo sblocco è registrato.</string>
+    <string name="sblocca">Sblocca</string>
+    <string name="annulla">Annulla</string>
+    <string name="coordinatore_di">Coordinatore di: %1$s</string>
+    <string name="richieste_delle_classi">Richieste di app delle classi coordinate</string>
+    <string name="nessuna_richiesta">Nessuna richiesta.</string>
+    <string name="in_attesa">in attesa</string>
+    <string name="approvata">approvata</string>
+    <string name="respinta">respinta</string>
+    <string name="pareri_n">%1$d pareri della famiglia</string>
+    <string name="motivazione_studente">Motivazione dello studente: %1$s</string>
+    <string name="pareri_famiglia">Pareri della famiglia</string>
+    <string name="nessun_parere">Nessun parere.</string>
+    <string name="decisione">Decisione: %1$s</string>
+    <string name="motivazione_obbligatoria">Motivazione (obbligatoria)</string>
+    <string name="approva">Approva</string>
+    <string name="respingi">Respingi</string>
+    <string name="approva_spiegazione">Se approvi, l\'app diventa consentita solo sul tablet di questo studente. La decisione è registrata.</string>
+    <string name="vedi_come_spiegazione">Guarda l\'app come la vede un dirigente o un docente: sola lettura, accesso registrato.</string>
+    <string name="dirigente">Dirigente</string>
+    <string name="docente">Docente</string>
+    <string name="cerca">Cerca per nome</string>
+    <string name="canale_richieste">Richieste di app</string>
+    <string name="notifica_titolo">Richieste di app da decidere</string>
+    <plurals name="notifica_testo">
+        <item quantity="one">%d richiesta in attesa</item>
+        <item quantity="other">%d richieste in attesa</item>
+    </plurals>
+</resources>

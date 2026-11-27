@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SPDX-License-Identifier: AGPL-3.0-or-later -->
+<resources>
+    <string name="app_name">EduWISP School</string>
+    <string name="accesso_spiegazione">Sign in with your school username and password.</string>
+    <string name="server">School server</string>
+    <string name="utente">Username</string>
+    <string name="password">Password</string>
+    <string name="accesso_demo">Demo with fictitious data only: user demo, password demo (read-only).</string>
+    <string name="accedi">Sign in</string>
+    <string name="ruolo">Role</string>
+    <string name="vedi_come">View as</string>
+    <string name="esci">Sign out</string>
+    <string name="banner_vedi_come">Viewing as %1$s. Read-only, access is logged.</string>
+    <string name="banner_sola_lettura">Read-only account: you can look at everything but change nothing.</string>
+    <string name="esci_dalla_vista">Leave view</string>
+    <string name="nessun_ruolo">Your account has no role in an active school.</string>
+    <string name="classi">Classes</string>
+    <string name="studenti">Students</string>
+    <string name="tablet">Tablets</string>
+    <string name="non_conformi">Non-compliant</string>
+    <string name="nessuna_classe">No classes.</string>
+    <string name="coordinata">coordinator</string>
+    <string name="riga_classe">%1$d students · %2$d tablets · %3$d non-compliant · %4$d offline</string>
+    <string name="indietro">← Back</string>
+    <string name="anno">School year %1$s</string>
+    <string name="app">Allowed apps</string>
+    <string name="nessuna">none</string>
+    <string name="sbloccata_fino">%1$s unlocked until %2$s</string>
+    <string name="blocca_ora">Lock now</string>
+    <string name="sblocca_per_lezione">Unlock an app for the lesson</string>
+    <string name="studenti_n">Students (%1$d)</string>
+    <string name="tablet_condivisi">Shared tablets (%1$d)</string>
+    <string name="nessun_tablet">no personal tablet</string>
+    <string name="tablet_non_conforme">%1$s · non-compliant</string>
+    <string name="tablet_senza_contatto">%1$s · offline for 24 hours</string>
+    <string name="tablet_ok">%1$s · compliant</string>
+    <string name="sblocco_spiegazione">Only for this class\'s tablets; it relocks by itself when it expires, even offline. The unlock is logged.</string>
+    <string name="sblocca">Unlock</string>
+    <string name="annulla">Cancel</string>
+    <string name="coordinatore_di">Coordinator of: %1$s</string>
+    <string name="richieste_delle_classi">App requests from coordinated classes</string>
+    <string name="nessuna_richiesta">No requests.</string>
+    <string name="in_attesa">pending</string>
+    <string name="approvata">approved</string>
+    <string name="respinta">rejected</string>
+    <string name="pareri_n">%1$d family opinions</string>
+    <string name="motivazione_studente">Student\'s reason: %1$s</string>
+    <string name="pareri_famiglia">Family opinions</string>
+    <string name="nessun_parere">No opinions.</string>
+    <string name="decisione">Decision: %1$s</string>
+    <string name="motivazione_obbligatoria">Reason (required)</string>
+    <string name="approva">Approve</string>
+    <string name="respingi">Reject</string>
+    <string name="approva_spiegazione">If you approve, the app is allowed only on this student\'s tablet. The decision is logged.</string>
+    <string name="vedi_come_spiegazione">See the app as a head teacher or teacher sees it: read-only, access is logged.</string>
+    <string name="dirigente">Head teacher</string>
+    <string name="docente">Teacher</string>
+    <string name="cerca">Search by name</string>
+    <string name="canale_richieste">App requests</string>
+    <string name="notifica_titolo">App requests to decide</string>
+    <plurals name="notifica_testo">
+        <item quantity="one">%d pending request</item>
+        <item quantity="other">%d pending requests</item>
+    </plurals>
+</resources>
