@@ -25,6 +25,7 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FilterChip
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.OutlinedButton
@@ -45,6 +46,8 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
@@ -63,6 +66,7 @@ import org.eduwisp.scuola.api.Persona
 import org.eduwisp.scuola.api.Richiesta
 import org.eduwisp.scuola.api.RichiestaBreve
 import org.eduwisp.scuola.api.Tablet
+import org.eduwisp.scuola.api.VoceMenu
 
 private val Blu = Color(0xFF163E73)
 
@@ -201,8 +205,8 @@ private fun Principale(sessione: Sessione, onEsci: () -> Unit) {
                         NavigationBarItem(
                             selected = (pagina as? Pagina.Sezione)?.id == v.id,
                             onClick = { pagina = Pagina.Sezione(v.id) },
-                            icon = { Text(v.titolo.take(1)) },
-                            label = { Text(v.titolo) },
+                            icon = { voceIcona(v.id)?.let { Icon(painterResource(it), contentDescription = null) } ?: Text(v.titolo.take(1)) },
+                            label = { Text(voceTitolo(v)) },
                         )
                     }
                 }
@@ -456,7 +460,7 @@ private fun nomeStato(stato: String) = stringResource(
 private fun RigaRichiesta(r: RichiestaBreve, onClick: () -> Unit) {
     Column(Modifier.fillMaxWidth().clickable(onClick = onClick).padding(vertical = 12.dp)) {
         Text("${r.app} · ${nomeStato(r.stato)}", fontWeight = FontWeight.SemiBold)
-        Text("${r.studente} · ${r.classe}" + if (r.pareri > 0) " · " + stringResource(R.string.pareri_n, r.pareri) else "",
+        Text("${r.studente} · ${r.classe}" + if (r.pareri > 0) " · " + pluralStringResource(R.plurals.pareri_n, r.pareri, r.pareri) else "",
             style = MaterialTheme.typography.bodySmall)
     }
     HorizontalDivider()
@@ -528,4 +532,26 @@ private fun VediCome(sessione: Sessione, onAttivata: () -> Unit) {
             }
         }
     }
+}
+
+
+/** Icona della voce di menu, scelta dall'id che manda il server. */
+private fun voceIcona(id: String): Int? = when (id) {
+    "istituto" -> R.drawable.ic_istituto
+    "classi" -> R.drawable.ic_classi
+    "coordinamento" -> R.drawable.ic_coordinamento
+    "richieste" -> R.drawable.ic_richieste
+    "figli" -> R.drawable.ic_figli
+    else -> null
+}
+
+/** Titolo della voce nella lingua del telefono; per un id sconosciuto usa quello del server. */
+@Composable
+private fun voceTitolo(v: VoceMenu): String = when (v.id) {
+    "istituto" -> stringResource(R.string.menu_istituto)
+    "classi" -> stringResource(R.string.menu_classi)
+    "coordinamento" -> stringResource(R.string.menu_coordinamento)
+    "richieste" -> stringResource(R.string.menu_richieste)
+    "figli" -> stringResource(R.string.menu_figli)
+    else -> v.titolo
 }
