@@ -1,0 +1,18 @@
+EduWISP Scuola è l'app per il personale degli istituti che usano EduWISP, la piattaforma libera e gratuita per gestire i tablet della scuola nel rispetto della privacy dei minori.
+
+Il menu cambia con il tuo ruolo:
+
+• Docente: le tue classi, gli studenti e lo stato dei loro tablet, le app consentite. Puoi sbloccare un'app per la lezione (da 30 minuti a 4 ore): si richiude da sola alla scadenza, anche senza rete.
+• Richieste di app: quando uno studente chiede un'app dal suo tablet, vedi la sua motivazione e il parere della famiglia, e decidi con una motivazione. Se approvi, l'app è consentita solo per quello studente.
+• Coordinatore: in più, le classi che coordini e le loro richieste da seguire.
+• Dirigente: il riepilogo dell'istituto, tutte le classi e tutte le richieste.
+
+Privacy prima di tutto:
+• vedi solo ciò che il tuo ruolo consente, come nel portale web della scuola;
+• nessun dato degli studenti viene salvato sul telefono;
+• le notifiche dicono solo quante richieste sono in attesa, senza nomi;
+• nessuna pubblicità, nessuna statistica, nessun servizio di terzi.
+
+Ti serve l'indirizzo del server EduWISP del tuo istituto e le tue credenziali. Per provarla c'è la demo con soli dati inventati: server https://demo.eduwisp.org, utente demo, password demo (sola lettura).
+
+Software libero (AGPL-3.0): https://github.com/EduWISP/eduwisp-app-scuola · Documentazione: https://eduwisp.org/docs/
