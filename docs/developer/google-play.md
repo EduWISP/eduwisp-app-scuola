@@ -19,10 +19,11 @@ Il pacchetto (AAB) si firma con la **chiave di caricamento** del progetto (Play 
 |---|---|
 | L'app raccoglie o condivide dati? | Raccoglie: sì (verso il server dell'istituto). Condivide con terzi: **no** |
 | Dati raccolti | **Informazioni personali → ID utente** (nome utente dell'istituto), per **funzionalità dell'app** e **gestione dell'account**; obbligatorio |
+| | **Attività nell'app → Altri contenuti generati dagli utenti**: le motivazioni delle decisioni sulle richieste di app, per **funzionalità dell'app**; non temporanee, obbligatorie |
 | | **Informazioni sul dispositivo o altri ID** → no (il modello del telefono serve solo a riconoscere l'accesso: indicarlo come «ID utente/account» se richiesto) |
 | Dati elaborati solo sul dispositivo | ruolo scelto, numero di richieste in attesa |
 | Crittografia in transito | **sì** (solo HTTPS) |
-| Eliminazione dei dati | sì: uscendo dall'app il token viene revocato; l'account lo gestisce l'istituto |
+| Eliminazione dei dati | sì: URL <https://eduwisp.org/docs/sicurezza-privacy/app-scuola/#cancellazione-dei-dati>; uscendo dall'app il token viene revocato; l'account lo gestisce l'istituto |
 | Posizione, contatti, foto, file, audio, cronologia, identificativi pubblicitari | **no** |
 
 L'app mostra dati di altre persone (studenti) letti dal server dell'istituto, senza salvarli sul telefono: non sono dati «raccolti» dall'utente dell'app.
